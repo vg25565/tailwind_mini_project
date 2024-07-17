@@ -3,98 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .grid img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    </style>
-     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./assests/favicon.ico">
+    <script src="configTailwind.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Shopping-Tailwind</title>
 </head>
-<body>
-   <div class="max-w-[1320px] mx-auto">
-    <h1 class="text-4xl text-center py-5">Avengers</h1>
-   </div>
-   <div class="max-w-[1320px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-5 px-6">
-   
-       <div class="text-center shadow-lg">
-        <div class="overflow-hidden"><img src="https://images-cdn.ubuy.co.in/634eddff1a211c427932fc3f-morstorm-x-e-model-iron-man-mk85-19.jpg" alt="iron man model kit" class="hover:scale-125 duration-1000">
-       </div>
-    <h3 class="py-2 text-2xl">Iron man model kit</h3>
-    <p class="py-2"> &#x20B9; 40,000</p>
+<body id="body">
+    <div class="max-w-7xl mx-auto">
+        <header class="h-28 sm:h-16 border-b">
+            <div class="flex justify-between items-center py-2 mx-2">
+                <div class="flex items-center">
+                    <img class="w-12" src="./assests/logo.png" alt="Shopping Logo">
+                    <span class="ml-2 text-2xl">Shopping</span>
+                </div>
+                <nav class="flex space-x-3">
+                    <span class="p-3 text-lg hover:bg-gray-100 hover:cursor-pointer hover:rounded hover:text-black">Home</span>
+                    <span class="p-3 text-lg hover:bg-gray-100 hover:cursor-pointer hover:rounded  hover:text-black">Products</span>
+                    <span class="p-3 text-lg hover:bg-gray-100 hover:cursor-pointer hover:rounded  hover:text-black">About Us</span>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="text-center my-20">
+                <h1 class="text-4xl">Lorem ipsum dolor.</h1>
+                <p class="text-xl mt-2 mb-7">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <button id="knowMoreButton" class="rounded-lg text-lg border p-3 bg-yellow-300 hover:bg-yellow-200">Know More</button>
+            </section>
+            <section>
+                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-center">
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md hover:shadow-lg" src="./assests/headphone pic 1.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md" src="./assests/headphone pic 2.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md" src="./assests/earphone pic 3.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md" src="./assests/earbuds pic 4.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md" src="./assests/watch pic 1.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md" src="./assests/watch pic 2.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md" src="./assests/watch pic 3.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                    <div class="max-w-sm border rounded p-3 hover:cursor-pointer hover:shadow-lg">
+                        <img class="rounded-md" src="./assests/earbuds pic 4.png" alt="Boat HeadPhone">
+                        <figcaption class="text-2xl my-5">Boat Gaming HeadPhones</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae officia.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="h-16 border-t py-4 text-center mt-7">
+            <p class="text-lg text-slate-500">Electro Shopping 2024</p>
+        </footer>
     </div>
-     <div class="text-center shadow-lg">
-        <div class="overflow-hidden "><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/e/l/w/medium-poster-design-no-3081-hulk-poster-hulk-posters-for-room-original-imaggbyahnsrq4hn.jpeg?q=90&crop=false" class="hover:scale-125 duration-1000">
-        </div>
-        <h3 class="py-2 text-2xl"> Hulk model kit</h3>
-        <p class="py-2 "> &#x20B9; 30,000</p></div>
-       <div class="text-center shadow-lg rounded"><div class="overflow-hidden duration-2000"><img src="https://m.media-amazon.com/images/I/61+oLlGNzFL.jpg" class="hover:scale-125 duration-1000"></div><h3 class="py-2 text-2xl">Sipderman model kit</h3>
-        <p class="py-2"> &#x20B9; 42,000</p></div>
-       <div class="text-center shadow-lg rounded"><div class="overflow-hidden"><img src="https://m.media-amazon.com/images/I/61zwSIHAqjL._AC_UF894,1000_QL80_.jpg" class="hover:scale-125 duration-1000"> </div><h3 class="py-2 text-2xl">Loki model kit</h3>
-        <p class="py-2"> &#x20B9; 34,000</p></div>
-   </div>
-
-   <div class="max-w-[1320px] md:py-[80] py-5 ">
-    <h2 class="text-4xl text-center ">Our Services</h2>
-    <div class="max-w-[1200px] mx-auto py-[30px] grid lg:grid-cols-4 sm: gird-cols-2 gap-6">
-        <!-- 1st -->
-        <div class="group shadow-lg py-5 text-center hover:bg-blue-700 hover:text-white duration-1000">
-            <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration "></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-       <!-- 2nd -->
-       <div class="group shadow-lg py-5 text-center hover:bg-blue-700 hover:text-white duration-1000">
-        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration"></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-       <!-- 3rd -->
-       <div class="group shadow-lg py-5 text-center hover:bg-blue-700 hover:text-white duration-1000">
-        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration"></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-       <!-- 4th -->
-       <div class="group shadow-lg py-5 text-center hover:bg-blue-700 hover:text-white duration-1000">
-        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration"></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-       <!-- 5th -->
-       <div class="group shadow-lg py-5 text-center hover:bg-blue-700 hover:text-white duration-1000">
-        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration"></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-       <!-- 6th -->
-       <div class="group shadow-lg py-5  text-center hover:bg-blue-700 hover:text-white duration-1000">
-        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration"></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-       <!-- 7th -->
-       <div class="group shadow-lg py-5  text-center hover:bg-blue-700 hover:text-white duration-1000">
-        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration"></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-       <!-- 8th -->
-       <div class="group shadow-lg py-5 text-center hover:bg-blue-700 hover:text-white duration-1000">
-        <i class="fas fa-laptop-code animate-bounce text-2xl text-blue-500 group-hover:text-white duration"></i>
-            <h3 class="text-xl py-2">Web Design</h3>
-       <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. quod similique sequi debitis a, veniam ex cum ad nisi.</p></div>
-    </div>
-   </div>
-
-   <div class="max-w-[1320px] md:py-[80px] py-5 flex mx-auto sm:flex-row flex-col">
-    <div class="basis-[45%] pb-5"><img src="https://thumbs.dreamstime.com/b/us-businessman-working-modern-technology-73677146.jpg" alt="" class="w-full">
-    </div>
-    <div class="basis-[55%] px-5">
-        <h2 class=" text-4xl pb-5"> This is About Section</h2>
-        <p class="py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nesciunt quibusdam ullam minus corrupti minima accusamus a quasi? Quibusdam, sunt? Error labore modi sed iusto nisi! Dolor quis molestias minus atque aperiam fugit nisi? Reiciendis earum ratione quos, facilis a inventore delectus eos architecto odit voluptates perferendis repellat perspiciatis aperiam?</p> 
-           <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam fugit incidunt, at pariatur et repellendus architecto alias ducimus! Voluptas, porro ea perferendis deserunt iusto in odio vero asperiores rem.</p> 
-        <p class="py-3">   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo necessitatibus esse ipsam repellendus, molestias praesentium velit illum quasi cupiditate maiores perferendis distinctio cum voluptatem nobis. Et iste fuga harum tenetur!
-        </p>
-    </div>
-    
-   </div>
+    <script src="script.js"></script>
 </body>
 </html>
